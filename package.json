@@ -1,0 +1,61 @@
+{
+    "name": "z-nomp",
+    "version": "0.0.4",
+    "description": "KotoCoin (yescrypt) stratum mining pool based on NOMP",
+    "keywords": [
+        "stratum",
+        "mining",
+        "pool",
+        "server",
+        "poolserver",
+        "kotocoin",
+        "koto",
+        "yescrypt"
+    ],
+    "homepage": "https://github.com/yoshuki43/k-nomp",
+    "bugs": {
+        "url": "https://github.com/yoshuki43/k-nomp/issues"
+    },
+    "license": "MIT",
+    "author": "Joshua Yabut",
+    "contributors": [
+        "aayanl",
+        "sennevb",
+        "Matthew Little",
+        "vekexasia",
+        "TheSeven",
+        "Yoshuki43"
+    ],
+    "main": "init.js",
+    "bin": {
+        "block-notify": "./scripts/blockNotify.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yoshuki43/k-nomp.git"
+    },
+    "dependencies": {
+        "async": "2.3.0",
+        "bignum": "0.12.5",
+        "body-parser": "1.17.1",
+        "colors": "1.1.2",
+        "compression": "1.6.2",
+        "dateformat": "2.0.0",
+        "dot": "1.1.1",
+        "express": "4.15.2",
+        "extend": "3.0.0",
+        "mysql": "2.13.0",
+        "node-json-minify": "1.0.0",
+        "node-watch": "0.5.2",
+        "nonce": "1.0.4",
+        "redis": "2.7.1",
+        "request": "2.81.0",
+        "stratum-pool": "git+https://github.com/yoshuki43/node-stratum-pool-yescrypt.git#koto--hf-dev"
+    },
+    "engines": {
+        "node": ">=0.10"
+    },
+    "scripts": {
+        "start": "LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PWD/node_modules/stratum-pool/node_modules/equihashverify/build/Release/:$PWD/node_modules/equihashverify/build/Release/ node init.js"
+    }
+}
