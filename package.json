@@ -12,7 +12,7 @@
         "koto",
         "yescrypt"
     ],
-    "homepage": "https://github.com/yoshuki43/k-nomp",
+    "homepage": "https://github.com/xoai001/vn-pool",
     "bugs": {
         "url": "https://github.com/yoshuki43/k-nomp/issues"
     },
@@ -32,7 +32,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/yoshuki43/k-nomp.git"
+        "url": "https://github.com/xoai001/vn-pool.git"
     },
     "dependencies": {
         "async": "2.3.0",
@@ -50,7 +50,7 @@
         "nonce": "1.0.4",
         "redis": "2.7.1",
         "request": "2.81.0",
-        "stratum-pool": "git+https://github.com/yoshuki43/node-stratum-pool-yescrypt.git#koto--hf-dev"
+        "stratum-pool": "git+https://github.com/xoai001/node-stratum-pool-yescrypt.git#koto--hf-dev"
     },
     "engines": {
         "node": ">=0.10"
