@@ -76,7 +76,7 @@ Clone the repository and run `npm update` for all the dependencies to be install
 sudo apt-get install build-essential libsodium-dev npm
 sudo npm install n -g
 sudo n v9
-git clone https://github.com/yoshuki43/k-nomp.git k-nomp
+git clone https://github.com/xoai001/vn-pool.git pool
 cd k-nomp
 npm update
 npm install
